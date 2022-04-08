@@ -103,11 +103,13 @@ function checkIfWinner(){
         }
         if(winner===true){
             console.log("player 1 red is the winner")
-            winnerMessage.innerHTML = '<h2>Red is the winner</h2>'
+            // winnerMessage.innerHTML = '<h2>Red is the winner</h2>'
+            document.getElementById('currentPlayer').innerHTML = '<h2>Red is the winner</h2>'
             document.body.appendChild(winnerMessage)
         } else if(winner===false) {
             console.log("player 2 blue is the winner")
-            winnerMessage.innerHTML = '<h2>Blue is the winner</h2>'
+            // winnerMessage.innerHTML = '<h2>Blue is the winner</h2>'
+            document.getElementById('currentPlayer').innerHTML = '<h2>Blue is the winner</h2>'
             document.body.appendChild(winnerMessage)
         }
     }
